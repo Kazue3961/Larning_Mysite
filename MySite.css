@@ -1,0 +1,232 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.clearfix::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+header {
+	width: 100%;
+	height: 70px;
+	background-color: #EC715F
+}
+.container {
+	width: 1024px;
+	margin: 0 auto; /* 確認 */
+}
+.logo {
+	height: 70px;
+}
+nav {
+	height: 70px;
+	float: right;
+}
+.nav-list {
+	line-height: 70px;
+	text-align: center;
+	display: inline-block;
+	list-style: none;
+	padding: 0 30px;
+	font-size: 16px;
+	color: #FAFAFA;
+}
+
+/* main-visual */
+.main-visual {
+	width: 100%;
+	height: 650px;
+	background-image: url(img/mv.png);
+	background-size: cover;
+	background-position: center;
+}
+.main-visual-title {
+	padding-top: 200px;
+	text-align: center;
+	font-size: 64px;
+	color: #FAFAFA;
+}
+.main-visual-text {
+	text-align: center;
+	padding-top: 10px;
+	font-size: 20px;
+	color: #FAFAFA;
+}
+
+/* Portforio/Feature/Profile共通 */
+.section-title {
+	padding-top: 90px;
+	text-align: center;
+	font-size: 32px;
+	color: #000000;
+}
+.section-title::after {
+	content: '';
+	display: block;
+	width: 70px;
+	height: 3px;
+	margin: 8px auto 30px auto;
+	background-color: #EC715F;
+}
+.section-text {
+	text-align: center;
+	font-size: 16px;
+}
+
+/* portfolio */
+.portfolio {
+	background-color: #ECEFF1;
+}
+.portfolio-item {
+	width: 920px;
+	padding: 30px 0 90px 0;
+	margin: 0 auto;
+}
+.portfolio-item-img {
+	float: left;
+	width: 300px;
+	height: 250px;
+	margin: 10px 10px 0 0;
+	background-size: cover;
+	background-position: center;
+}
+.portfolio-item-img:nth-child(3n) {
+	margin-right: 0;
+}
+.portfolio-item-img:nth-child(1) {
+	background-image: url(img/sketch.jpg);
+}
+.portfolio-item-img:nth-child(2) {
+	background-image: url(img/websuku.png);
+}
+.portfolio-item-img:nth-child(3) {
+	background-image: url(img/write.jpg);
+}
+.portfolio-item-img:nth-child(4) {
+	background-image: url(img/webcamp.png);
+}
+.portfolio-item-img:nth-child(5) {
+	background-image: url(img/talk.jpg);
+}
+.portfolio-item-img:nth-child(6) {
+	background-image: url(img/webcamp-mother.png);
+}
+
+/* Feature */
+.strength-area {
+	width: 980px;
+	padding: 30px 0 90px 0;
+	margin: 0 auto;
+	color: #000000;
+}
+.strength {
+	float: left;
+	width: 320px;
+	margin-right: 10px;
+	font-size: 60px;
+	text-align: center;
+}
+.strength:nth-child(3) {
+	margin-right: 0;
+}
+.strength-title {
+	font-size: 20px;
+	padding: 10px 0;
+}
+.strength-text {
+	font-size: 16px;
+	text-align: left;
+}
+
+/* Profile */
+.profile {
+	background-color: #ECEFF1;
+	color: #000000;
+}
+.profile-area {
+	width: 1024px;
+	padding: 30px 0 90px 0;
+	margin: 0 auto;
+}
+.profile-left {
+	float: left;
+	width: 512px;
+}
+.profile-icon {
+	width: 250px;
+	height: 250px;
+	margin: 0 auto;
+	border-radius: 50%;
+	background-image: url(img/my-icon.jpg);
+}
+.profile-right {
+	float: right;
+	width: 512px;
+}
+.profile-right-titile {
+	font-size: 20px;
+	margin: 20px 0 5px 0;
+}
+.profile-right-titile:first-child {
+	margin-top: 0px;
+}
+.profile-right-text {
+	font-size: 16px;
+}
+
+/* Contact */
+.info-area {
+	width: 800px;
+	padding: 30px 0 90px 0;
+	margin: 0 auto;
+}
+.info-left {
+	float: left;
+	width: 400px;
+}
+.info-title {
+	font-size: 20px;
+	padding: 20px 0 5px 0;
+}
+.info-title:first-child {
+	padding: 0;
+}
+.info-left-content {
+	width: 130px;
+	margin: 0 auto;
+}
+.info-right {
+	float: right;
+	width: 400px;
+}
+.info-right-content {
+	width: 180px;
+	margin: 0 auto;
+}
+.info-right-content .fab {
+	font-size: 50px;
+	padding-right: 20px;
+}
+.info-right-content .fab:last-child {
+	font-size: 50px;
+	padding-right: 0;
+}
+.info-sns-title {
+	font-size: 20px;
+	padding-bottom: 5px;
+}
+
+
+footer {
+	width: 100%;
+	line-height: 60px;
+	text-align: center;
+	font-size: 16px;
+	color: #FAFAFA;
+	background-color: #EC715F
+
+}
