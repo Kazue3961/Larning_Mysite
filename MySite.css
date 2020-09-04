@@ -15,21 +15,23 @@ header {
 	height: 70px;
 	background-color: #EC715F
 }
+
 .container {
 	width: 1024px;
 	margin: 0 auto; /* 確認 */
 }
 .logo {
+	float: left;
 	height: 70px;
 }
-nav {
-	height: 70px;
+
+.navgroup {
 	float: right;
 }
+
 .nav-list {
+	float: left;
 	line-height: 70px;
-	text-align: center;
-	display: inline-block;
 	list-style: none;
 	padding: 0 30px;
 	font-size: 16px;
@@ -90,7 +92,7 @@ nav {
 	float: left;
 	width: 300px;
 	height: 250px;
-	margin: 10px 10px 0 0;
+	margin: 0 10px 10px 0;
 	background-size: cover;
 	background-position: center;
 }
@@ -193,7 +195,7 @@ nav {
 	padding: 20px 0 5px 0;
 }
 .info-title:first-child {
-	padding: 0;
+	padding: 0 0 5px 0;
 }
 .info-left-content {
 	width: 130px;
@@ -209,11 +211,11 @@ nav {
 }
 .info-right-content .fab {
 	font-size: 50px;
-	padding-right: 20px;
+	margin-right: 20px;
 }
 .info-right-content .fab:last-child {
 	font-size: 50px;
-	padding-right: 0;
+	margin-right: 0;
 }
 .info-sns-title {
 	font-size: 20px;
@@ -228,5 +230,144 @@ footer {
 	font-size: 16px;
 	color: #FAFAFA;
 	background-color: #EC715F
+
+}
+
+/* レスポンシブ */
+@media screen and (max-width:768px) {
+	header {
+		width: 100%;
+		height: 50px;
+	}
+	.logo {
+		height: 50px;
+	}
+
+	.navgroup {
+		float: none;
+		display: none;
+	}
+	.nav-list {
+		float: none;
+	}
+	.hamburger-menu {
+		float: right;
+		width: 40px;
+		height: 40px;
+		margin: 5px 0;
+		margin-right: 5%;
+		border: 1px solid #FAFAFA;
+	}
+	.line {
+		display: block;
+		width: 23px;
+		height: 2px;
+		margin: 8px auto;
+		background-color: #FAFAFA;
+	}
+
+	.container {
+		width: 90%;
+	}
+
+	.main-visual {
+		width: 100%;
+		height: 650px;
+		background-image: url(img/code.png);
+		background-size: cover;
+		background-position: center;
+	}
+
+	.main-visual-title {
+		padding-top: 200px;
+		text-align: center;
+		font-size: 40px;
+		color: #FAFAFA;
+	}
+	.main-visual-text {
+		padding-top: 10px;
+		text-align: center;
+		font-size: 18px;
+		color: #FAFAFA;
+	}
+
+	.sp-none {
+		display: none;
+	}
+
+	.portfolio {
+		padding: 0 5%;
+	}
+	.portfolio-item {
+		width: 300px;
+	}
+
+	.portfolio-item-img {
+		float: none;
+	}
+	.portfolio-item-img:nth-child(odd) {
+		display: none;
+	}
+	.portfolio-item-img:nth-child(2) {
+		margin: 0;
+	}
+
+	.strength-area {
+		width: 320px;
+	}
+
+	.strength {
+		float: none;
+		margin-right: none;
+		margin-top: 10px;
+	}
+	.strength:nth-child(1) {
+		margin-top: 0;
+	}
+
+	.profile {
+		padding: 0 5%;
+	}
+	.profile-area {
+		width: 90%;
+	}
+	.profile-left {
+		float: none;
+		width: 100%;
+	}
+	.profile-right {
+		float: none;
+		width: 100%;
+		text-align: center;
+	}
+	.profile-right-titile:first-child {
+		margin-top: 20px;
+	}
+	.profile-right-titile {
+		margin-top: 20px;
+	}
+
+	.info-area {
+		width: 100%;
+	}
+	.info-left {
+		float: none;
+		width: 100%;
+		text-align: center;
+	}
+	.info-right {
+		float: none;
+		width: 100%;
+		text-align: center;
+	}
+	.info-title:first-child {
+		padding: 20px 0 5px 0;
+	}
+	.info-sns-title {
+		padding: 20px 0 5px 0;
+	}
+	.info-right-content .fab {
+		padding-right: 8px;
+	}
 
 }
